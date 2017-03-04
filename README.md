@@ -9,6 +9,7 @@ http://stackoverflow.com/questions/2504178/lru-cache-design
 https://www.hackerrank.com/challenges/abstract-classes-polymorphism
 #My solution:
 //pointer to a base class http://www.cplusplus.com/doc/tutorial/polymorphism/
+
 ```
 class LRUCache : public Cache{
     private:
@@ -61,6 +62,7 @@ This problem was solved by using exeptions which was a unique expirience because
 https://www.hackerrank.com/challenges/exceptional-server
 #My solution:
 //http://www.cplusplus.com/doc/tutorial/exceptions/  
+
 ```
 		try {
          int result = Server::compute(A, B);
@@ -84,6 +86,7 @@ http://www.geeksforgeeks.org/dynamic-programming-set-4-longest-common-subsequenc
 #Link to a problem description: 
 https://www.hackerrank.com/challenges/magic-spells
 #My solution:
+
 ```
 //first part is a dynamic cast conversion that goes through all spell classes
 Fireball* fball = dynamic_cast<Fireball*>(spell);
@@ -143,6 +146,7 @@ http://www.cplusplus.com/doc/tutorial/polymorphism/
 #Link to problem description:
 https://www.hackerrank.com/challenges/virtual-functions
 #My solution:
+
 ```
 class Person{
     public:
@@ -212,4 +216,4 @@ class Student : public Person{
     
 };
 ```
-#Challenge name: 
+
