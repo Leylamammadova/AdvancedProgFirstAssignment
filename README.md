@@ -76,7 +76,8 @@ https://www.hackerrank.com/challenges/exceptional-server
         } catch(...){               //http://stackoverflow.com/questions/315948/c-catching-all-exceptions
             cout<<"Other Exception"<<endl;
         }
-	```
+	
+```
        
 #Challenge name: Magic Spells
 Max Score: 40
@@ -88,8 +89,7 @@ https://www.hackerrank.com/challenges/magic-spells
 #My solution:
 
 ```
-//first part is a dynamic cast conversion that goes through all spell classes
-Fireball* fball = dynamic_cast<Fireball*>(spell);
+Fireball* fball = dynamic_cast<Fireball*>(spell); //first part is a dynamic cast conversion that goes through all spell classes
 if(fball!=NULL){
         fball->revealFirepower();
         return;
@@ -137,7 +137,7 @@ if (wtbolt != NULL) {
     }
 
    cout<<longest[m-1][n-1]<<endl; 
-   ```
+ ```
    
 #Challenge name: Virtual Functions
 Max score: 40
