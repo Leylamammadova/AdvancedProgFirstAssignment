@@ -9,6 +9,7 @@ http://stackoverflow.com/questions/2504178/lru-cache-design
 https://www.hackerrank.com/challenges/abstract-classes-polymorphism
 #My solution:
 //pointer to a base class http://www.cplusplus.com/doc/tutorial/polymorphism/
+```
 class LRUCache : public Cache{
     private:
     map<int,Node*>::iterator itr; //iterator 
@@ -51,6 +52,7 @@ class LRUCache : public Cache{
       return -1;  
     }
 };
+```
 
 #Challenge name: Exceptional Server
 Max Score: 30
@@ -59,6 +61,7 @@ This problem was solved by using exeptions which was a unique expirience because
 https://www.hackerrank.com/challenges/exceptional-server
 #My solution:
 //http://www.cplusplus.com/doc/tutorial/exceptions/  
+```
 		try {
          int result = Server::compute(A, B);
             cout<<result<<endl;
@@ -71,6 +74,7 @@ https://www.hackerrank.com/challenges/exceptional-server
         } catch(...){               //http://stackoverflow.com/questions/315948/c-catching-all-exceptions
             cout<<"Other Exception"<<endl;
         }
+	```
        
 #Challenge name: Magic Spells
 Max Score: 40
@@ -80,6 +84,7 @@ http://www.geeksforgeeks.org/dynamic-programming-set-4-longest-common-subsequenc
 #Link to a problem description: 
 https://www.hackerrank.com/challenges/magic-spells
 #My solution:
+```
 //first part is a dynamic cast conversion that goes through all spell classes
 Fireball* fball = dynamic_cast<Fireball*>(spell);
 if(fball!=NULL){
@@ -129,6 +134,7 @@ if (wtbolt != NULL) {
     }
 
    cout<<longest[m-1][n-1]<<endl; 
+   ```
    
 #Challenge name: Virtual Functions
 Max score: 40
@@ -137,6 +143,7 @@ http://www.cplusplus.com/doc/tutorial/polymorphism/
 #Link to problem description:
 https://www.hackerrank.com/challenges/virtual-functions
 #My solution:
+```
 class Person{
     public:
     string name;
@@ -204,5 +211,5 @@ class Student : public Person{
     }
     
 };
-
+```
 #Challenge name: 
