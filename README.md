@@ -1,5 +1,6 @@
 # Leyla Mammadova AdvancedProgrammingFirstAssignment
-
+Overall hackerrank points 625
+Here are some of my favorite solutions:
 #Challenge name: Abstract Classes - Polymorphism
 Max Score: 60
 In order to get solution I tried to implement a simple LRU cache, at first I actually skipped this task but returned and finished it after completing the STL chapter of C++ chalenges. STL helped me to understand better map class and use of iterator. I've spend a decent ammount of time reading the Node struct and cache class in order to understand the implementation.
