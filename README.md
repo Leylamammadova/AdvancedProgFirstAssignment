@@ -54,6 +54,51 @@ class LRUCache : public Cache{
     }
 };
 ```
+#Challenge name: Deque STL
+Max score: 50
+This problem was one of hardest for me to understand because I failed to pass all test cases due to timeouts. I included max element algorithm in order to pass with lower time complexity.
+Link that helped a lot:
+http://www.geeksforgeeks.org/maximum-of-all-subarrays-of-size-k/
+#Link to problem description:
+https://www.hackerrank.com/challenges/deque-stl
+#My solution:
+
+
+```
+void printKMax(int arr[], int n, int k){
+       deque<int> dq; 
+    int max=arr[0];
+	dq.push_back(arr[0]);
+    
+    for(int i=1; i<k; ++i){ //first max element 
+        dq.push_back(arr[i]);
+        if(arr[i]>=max){
+            max = arr[i];
+        }
+    }
+    
+    for(int i=k; i<n; ++i){ //check the rest subarrays
+        cout<<max<<" ";
+        int front = dq.front();
+        dq.pop_front();
+        if(front == max && !dq.empty()){
+            max = *(max_element(dq.begin(), dq.end()));
+        }
+        dq.push_back(arr[i]);
+        
+        if(dq.size()==1){ //need to check if k=1 
+            max=arr[i];
+        }else if(max>arr[i]){ 
+            max==max;    
+        } else {
+            max=arr[i];
+        }
+      
+    }
+    cout<<max<<endl;
+
+}
+```
 
 #Challenge name: Exceptional Server
 Max Score: 30
