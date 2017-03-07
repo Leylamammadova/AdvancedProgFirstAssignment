@@ -1,9 +1,11 @@
 # Leyla Mammadova AdvancedProgrammingFirstAssignment
 Overall hackerrank points 625
+
 Here are some of my favorite solutions:
 #Challenge name: Abstract Classes - Polymorphism
 Max Score: 60
-In order to get solution I tried to implement a simple LRU cache, at first I actually skipped this task but returned and finished it after completing the STL chapter of C++ chalenges. STL helped me to understand better map class and use of iterator. I've spend a decent ammount of time reading the Node struct and cache class in order to understand the implementation.
+In order to get solution I tried to implement a simple LRU cache, at first I actually skipped this task but returned and finished it after completing the STL chapter of C++ chalenges. STL helped me to understand better map class and use of iterator. I've spend a decent ammount of time reading the Node struct and cache class in order to understand the implementation. On an access of a value, you move the corresponding node in the linked map to the head. When you need to remove a value from the cache, you remove from the tail end. When you add a value to cache, you just place it at the head of the linked map. I also was told to make set and get functions that run when input command to. Get function returns the value followed by a key to be found in the cache. Set commmand followed by the key and value respectively to be inserted/replaced in the cache. If key is missed get function will return -1.
+
 p.s. this linked helped to understand the design of LRU cache:
 http://stackoverflow.com/questions/2504178/lru-cache-design
 #Link to a problem description:
@@ -57,7 +59,7 @@ class LRUCache : public Cache{
 ```
 #Challenge name: Deque STL
 Max score: 50
-This problem was one of hardest for me to understand because I failed to pass all test cases due to timeouts. I included max element algorithm in order to pass with lower time complexity.
+This problem can be solved with using vectors or two loops but the requirement is to use deque. You also fail to pass all test cases due to timeouts if you are not using deques. I included max element algorithm in order to pass with lower time complexity. Input was managed by hackerrank, only request was to find max element in each subarray. So I made I deque that stores the input array, and prits the first max element of a subarray, then a check the rest of array. This method was taken from geekforgeeks link i paste below, and has more reasonable explanation.
 Link that helped a lot:
 http://www.geeksforgeeks.org/maximum-of-all-subarrays-of-size-k/
 #Link to problem description:
@@ -127,8 +129,8 @@ https://www.hackerrank.com/challenges/exceptional-server
        
 #Challenge name: Magic Spells
 Max Score: 40
-This was a challenge I stucked for a couple of days. Thanks to Abdullah who said that it is a longest common subsequence problem not only a dynamic cast one. 
-p.s link that helped to understand the lcs
+This was a challenge I stucked for a couple of days. Thanks to Abdullah who said that it is a longest common subsequence problem not only a dynamic cast one. I used the dynamic programming implementation of LCS problem described in a link below and i implement it into this challenge. 
+Link that helped:
 http://www.geeksforgeeks.org/dynamic-programming-set-4-longest-common-subsequence/
 #Link to a problem description: 
 https://www.hackerrank.com/challenges/magic-spells
@@ -180,7 +182,7 @@ if (wtbolt != NULL) {
                 }
             }
         }
-    }
+    }=
 
    cout<<longest[m-1][n-1]<<endl; 
  ```
@@ -222,84 +224,6 @@ class D: public A, public B, public C
 		 void check(int); //Do not delete this line.
 };
 ```
-   
-#Challenge name: Virtual Functions
-Max score: 40
-Link that helped:
-http://www.cplusplus.com/doc/tutorial/polymorphism/
-#Link to problem description:
-https://www.hackerrank.com/challenges/virtual-functions
-#My solution:
 
-```
-class Person{
-    public:
-    string name;
-    int age;
-    
-    virtual void getdata() = 0;
-    virtual void putdata() = 0;
-};
-    int prof_id = 0;
-    int stud_id = 0;
-
-
-class Professor : public Person{
-    public:
-    int pub;
-    int id1;
-    
-    Professor(){
-        ++prof_id;
-    }
-    
-    void getdata(){
-        cin>>name;
-        cin>>age;
-        cin>>pub;  
-        id1 = prof_id;
-    }
-    void putdata(){
-        cout<<name<<" ";
-        cout<<age<<" ";
-        cout<<pub<<" ";
-        
-        cout<<id1<<endl; 
-    }
-    
-};
-class Student : public Person{
-    public:
-    int marks[6];
-    int sum = 0;
-    int id2;
-    Student(){
-        ++stud_id;
-    }
-    
-    void getdata(){
-        cin>>name;
-        cin>>age;
-        for(int i = 0; i<6; i++){
-            cin>>marks[i];
-        }
-        id2=stud_id;
-    }
-    
-    void putdata(){
-        cout<<name<<" ";
-        cout<<age<<" ";
-        for(int j = 0; j<6; j++){
-            sum+= marks[j];
-        }
-        cout<<sum<<" ";
-        
-        cout<<id2<<endl;
-        
-    }
-    
-};
-```
-
-
-
+#Conclusion 
+In general this assignment definetly improved my programming skills, and increased ammount of possible ways of solving the same problem. I've learned more about STL library, longest common subsequence problem, polymorphism, pointers and structers. 
