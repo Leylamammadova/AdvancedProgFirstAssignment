@@ -1,5 +1,7 @@
 # Leyla Mammadova AdvancedProgrammingFirstAssignment
 Overall hackerrank points 625
+Hackerrank Profile Link:
+https://www.hackerrank.com/leylamammadova93
 
 Here are some of my favorite solutions:
 #Challenge name: Abstract Classes - Polymorphism
@@ -187,7 +189,7 @@ if (wtbolt != NULL) {
    cout<<longest[m-1][n-1]<<endl; 
  ```
  
- #Challenge name: Accessing Inherited Functions
+#Challenge name: Accessing Inherited Functions
 Max score: 30
 i guess tricky part of this challenge was that 2 , 3 and 5 are prime factors that won't change. So loop check if its divided by the prime factor wothout a trace and access the inherited function in  a class.
 #Link to problem description:
